@@ -319,7 +319,25 @@ word-wrap: break-word;&quot;&gt;
 [[Pasta]]: Nice little spaghetti bologne
 
 &lt;/ br&gt;
-[[Salad]]: Cute little garden salad]</tw-passagedata><tw-passagedata pid="22" name="Pasta" tags="r-interior colour" position="1050,1500" size="100,100">(set: $correctanswer to it + 1)</tw-passagedata><tw-passagedata pid="23" name="Salad" tags="r-interior colour" position="800,1500" size="100,100">(set: $wronganswer to it -1)</tw-passagedata><tw-passagedata pid="24" name="Steak" tags="r-interior colour" position="925,1500" size="100,100">(set: $neutralanswer to it + 0)</tw-passagedata></tw-storydata>
+[[Salad]]: Cute little garden salad]</tw-passagedata><tw-passagedata pid="22" name="Pasta" tags="r-interior colour" position="1050,1500" size="100,100">(set: $correctanswer to it + 1)
+
+You: I think I might get the garden salad</tw-passagedata><tw-passagedata pid="23" name="Salad" tags="r-interior colour" position="800,1500" size="100,100">(set: $wronganswer to it -1)
+&lt;div id=&quot;txt&quot; style=
+&quot;background: rgba(146, 146, 146, 0.8);
+position: fixed; 
+bottom: 4vw; left:10vw; right:10vw; 
+max-height:10vh;
+line-height: 1.1em;
+word-wrap: break-word;&quot;&gt;
+(text-colour:#f783ac)[You: I think I might get the garden salad]
+
+(click-replace: &quot;You: I think I might get the garden salad&quot;)[(text-colour:#74c0fc)[Him: Oh! Really? Are you sure?]]
+
+(click-replace: &quot;Him: Oh! Really? Are you sure?&quot;)[(text-colour: white)[//He seemed sincere.//]]
+
+(click-replace: &quot;He seemed sincere.&quot;)[(text-colour: #f783ac)[[Yes]] or (text-colour: #f783ac)[[No]]]</tw-passagedata><tw-passagedata pid="24" name="Steak" tags="r-interior colour" position="925,1500" size="100,100">(set: $neutralanswer to it + 0)</tw-passagedata><tw-passagedata pid="25" name="Yes" tags="r-interior colour" position="700,1625" size="100,100">(set: $wronganswer to it -1)
+
+</tw-passagedata><tw-passagedata pid="26" name="No" tags="" position="825,1625" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
